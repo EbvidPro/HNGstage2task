@@ -1,1 +1,1 @@
-print('Oluwatobi David');
+document.write('Oluwatobi David');
