@@ -1,0 +1,268 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1d1f1e;
+  font-family: sans-serif;
+}
+.sideNav {
+  height: 100%;
+  width: 60px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.logo {
+  width: 65%;
+  border-radius: 50%;
+}
+.icons img:hover {
+  filter: grayscale(10%) brightness(40%) sepia(100%) hue-rotate(-50deg)
+    saturate(600%) contrast(0.8);
+}
+.icons {
+  margin-top: 220%;
+}
+.sideNav img {
+  color: rgb(250, 249, 249);
+  padding: 15px;
+}
+.image {
+  text-align: center;
+  position: fixed;
+  width: 27rem;
+  height: 700px;
+  left: 60px;
+  background-repeat: no-repeat;
+  top: 0px;
+  z-index: 1;
+  overflow-x: hidden;
+  background: url("me.jpg");
+  box-shadow: 0 1rem 10rem rgba(0 0 170/0.3), 0 1rem 4rem rgba(0 0 0/0);
+}
+.smallMe {
+  display: none;
+}
+.slim {
+  display: none;
+}
+.hero-text {
+  margin-top: 110%;
+}
+.hero-icons img:hover {
+  filter: grayscale(10%) brightness(40%) sepia(100%) hue-rotate(-50deg)
+    saturate(600%) contrast(0.8);
+  fill: white;
+}
+.hero-icons img {
+  padding: 5px 10px;
+}
+hr {
+  width: 83%;
+  border: 1px solid rgba(255, 255, 255, 0.034);
+}
+h1 {
+  color: white;
+}
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+}
+h4 {
+  margin-top: 0;
+  color: #0026ff;
+}
+.main {
+  margin: 70px 30px 20px 520px;
+  animation: main 3s;
+  animation-iteration-count: 1;
+}
+@keyframes main {
+  from {
+    margin-top: -90rem;
+  }
+  to {
+    margin-top: 70px;
+  }
+}
+.main p {
+  color: rgba(255, 255, 255, 0.541);
+  line-height: 1.5;
+  text-align: justify;
+}
+.myLine {
+  display: block;
+  margin-top: -10px;
+  float: left;
+  border: 2px solid #0026ff;
+  width: 5%;
+  animation: myline 3s alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes myline {
+  from {
+    width: 0;
+    border: 2px solid #0026ff;
+  }
+  to {
+    width: 15%;
+    border: 2px solid orange;
+  }
+}
+#about,
+.skills {
+  margin-bottom: 50px;
+}
+#experience {
+  margin-top: 50px;
+}
+.work {
+  display: grid;
+  padding: 20px 30px;
+  grid-template-columns: 50% 50%;
+  grid-gap: 30px;
+  margin-bottom: 50px;
+}
+.work a {
+  text-decoration: none;
+  color: #0026ff;
+  font-size: large;
+}
+.work a:hover {
+  color: white;
+}
+.skills {
+  margin-top: 50px;
+}
+ul li {
+  color: rgba(255, 255, 255, 0.541);
+  line-height: 2;
+}
+#contact {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.contactInfo {
+  padding: 20px;
+}
+.contactInfo li {
+  line-height: 3;
+  list-style: none;
+  color: rgba(255, 255, 255, 0.541);
+}
+.contactInfo li a {
+  text-decoration: none;
+  color: white;
+}
+.contactInfo li a:hover {
+  color: #0026ff;
+}
+#education {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: white;
+}
+@media screen and (max-width: 950px) {
+  .work {
+    grid-template-columns: auto;
+  }
+  .hero-text {
+    margin-top: 90%;
+  }
+}
+@media screen and (max-width: 890px) {
+  .image {
+    text-align: left;
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: none;
+    background-color: rgba(0, 0, 0, 0.199);
+    box-shadow: none;
+  }
+  .smallMe {
+    display: block;
+    position: relative;
+    top: -30px;
+    width: 33%;
+    z-index: -1;
+    float: left;
+    overflow: hidden;
+  }
+  .hero-text {
+    position: relative;
+    margin: 40px 0px 0px 18rem;
+  }
+  h2 {
+    color: white;
+  }
+  .main {
+    margin: 0px 30px 0px 80px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .image {
+    text-align: left;
+    position: relative;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.199);
+    box-shadow: none;
+  }
+  .smallMe {
+    display: block;
+    position: relative;
+    top: -30px;
+    width: 30%;
+    z-index: -1;
+    float: left;
+    overflow: hidden;
+  }
+  .hero-text {
+    position: relative;
+    margin: 10px 0px 0px 15rem;
+  }
+  .main {
+    margin: 0px 30px 0px 80px;
+  }
+  .main p {
+    text-align: left;
+  }
+  .work {
+    padding: 20px 10px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .image {
+    background-color: none;
+    background-color: rgba(0, 0, 0, 0.199);
+    height: auto;
+    width: 87%;
+    text-align: center;
+  }
+  .smallMe {
+    display: none;
+  }
+  .slim {
+    display: none;
+    margin-top: -100px;
+    width: 17rem;
+  }
+  .hero-text {
+    position: relative;
+    margin: 30px 0px 20px 0rem;
+  }
+  .main {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  h2 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+  }
+}
